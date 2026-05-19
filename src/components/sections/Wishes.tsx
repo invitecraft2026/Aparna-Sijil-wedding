@@ -6,55 +6,133 @@ import { FloralDivider } from "@/components/FloralDivider";
 const WISHES = [
   {
     name: "Priti",
-    text: "Dear Aparna, First of all, I really miss you, but above all, I cherish how beautifully you have grown in love. I still remember our office days — your endless talks and rant sessions about how finding true love in today’s world is such an impossible thing. But look at you today… Touch wood, but all you glow with now is love and happiness, and honestly, I could not be more at peace seeing you finally make it official. Somewhere between all those conversations, overthinking sessions, and “I will never do this for a guy” statements, life really said “wait till you meet the right person.” And now look at you doing everything with the biggest smile on your face. I am so, so happy and proud of you for how far you’ve come, the way you allowed yourself to trust it again. You truly deserve this kind of happiness. And for Sijil, I haven’t met him yet, but one thing I am absolutely sure of is that he is very patient 😂 Which already tells me he’s the perfect one for you. But jokes apart, thank you for loving my girl the way she deserves to be loved. Sending all my warm wishes and blessings to both of you as you start this beautiful new chapter together. May your life be full of love, laughter, peace, endless teasing, and the kind of companionship that makes even ordinary days feel special. And lastly… I genuinely cannot wait to see my BBG in her wedding dress 😍❤️",
+    text: `Dear Aparna, First of all, I really miss you, but above all, I cherish how beautifully you have grown in love.
+
+I still remember our office days — your endless talks and rant sessions about how finding true love in today’s world is such an impossible thing. But look at you today…
+
+Touch wood, but all you glow with now is love and happiness, and honestly, I could not be more at peace seeing you finally make it official.
+
+Somewhere between all those conversations, overthinking sessions, and “I will never do this for a guy” statements, life really said “wait till you meet the right person.”
+
+And now look at you doing everything with the biggest smile on your face.
+
+I am so, so happy and proud of you for how far you’ve come, the way you allowed yourself to trust it again. You truly deserve this kind of happiness.
+
+And for Sijil, I haven’t met him yet, but one thing I am absolutely sure of is that he is very patient 😂 Which already tells me he’s the perfect one for you.
+
+But jokes apart, thank you for loving my girl the way she deserves to be loved.
+
+Sending all my warm wishes and blessings to both of you as you start this beautiful new chapter together. May your life be full of love, laughter, peace, endless teasing, and the kind of companionship that makes even ordinary days feel special.
+
+And lastly… I genuinely cannot wait to see my BBG in her wedding dress 😍❤️`,
   },
+
   {
     name: "Aswini",
-    text: "I know how picky you are when it comes to literally everything — especially relationships — so seeing you choose the right person to spend your forever with makes me unbelievably happy. I’m so proud of how far you’ve come and even happier seeing the love you both share. The way he heals everything around you, the way he takes care of you so deeply, even the tiniest little details — trust me, even I noticed 🤌 That kind of love is rare and beautiful.",
+    text: `I know how picky you are when it comes to literally everything — especially relationships — so seeing you choose the right person to spend your forever with makes me unbelievably happy.
+
+I’m so proud of how far you’ve come and even happier seeing the love you both share.
+
+The way he heals everything around you, the way he takes care of you so deeply, even the tiniest little details — trust me, even I noticed 🤌 That kind of love is rare and beautiful.
+
+You both truly bring out the best in each other.
+
+And I know there were days filled with confusion, stress, and overthinking, but look at you now — standing here with the love of your life and both your families happily around you. It honestly feels so right.
+
+You two are truly made for each other, and I wish you both a lifetime filled with love, happiness, peace, laughter, and all the amazing things life has to offer.
+
+May you both stay this happy forever and ever.
+
+Love you both so much. Mwaaahs 🫶🧿🤌❤️😘`,
   },
+
   {
     name: "Abhimanyu",
-    text: "When I joined Silicon, I never expected to find someone who would become like my own sister. Akka, you are genuinely one of the best people I came across in Bangalore, and office never felt the same after you left 😏. Today, seeing both of you getting married, I feel so happy and proud ♥️.",
+    text: `When I joined Silicon, I never expected to find someone who would become like my own sister.
+
+Akka, you are genuinely one of the best people I came across in Bangalore, and office never felt the same after you left 😏
+
+And then came the days when you started talking about Sijil chettan.
+
+I still remember the way you described him — calm, patient, peaceful💓... while you are full chaos.
+
+And that's when I gave my expert relationship advice😎:
+
+"Akka, if both people are calm, the relationship will become bland. One calm person and one chaos person — that's the perfect balance."
+
+Honestly, the way you spoke about him, I already knew this relationship was going somewhere special💓
+
+And today, seeing both of you getting married, I feel so happy and proud♥️
+
+Sijil chettan, thank you for loving and taking care of our Akka🥰
+
+And Akka, no matter what happens, don't change. Keep being the same caring, chaotic, beautiful person we all love.
+
+Pinne kalyanathin enik shirt eduth tharann marakall!! 😋🤣`,
   },
+
   {
     name: "Aswanth",
     text: "To my beautiful friends who become an even more beautiful couple today — wishing you both a lifetime filled with happiness, laughter, unconditional love and countless beautiful memories together. Cheers 🥂 to love, friendship and this wonderful new chapter.",
   },
+
   {
     name: "Sreedarshan",
     text: "A new chapter, new memories, and a whole new journey together. Wishing you both a beautiful life ahead filled with happiness, support, and lots of laughter ❤️",
   },
+
   {
     name: "Abhinand",
     text: "Cheers to love, partnership, and a future filled with happiness. May your married life be filled with support, understanding, adventures, and countless beautiful moments together 💍✨",
   },
+
   {
     name: "Abhi",
     text: "Congrats Sijil & Aparna ❤️ — one lifetime subscription unlocked 🔓 to each other 🥳🎉",
   },
+
   {
     name: "Jazir",
     text: "Wishing Sijil & Aparna a lifetime filled with love, laughter, little adventures, and beautiful memories together. So happy for you both. God bless you in abundance.",
   },
+
   {
     name: "Sidharth",
     text: "♥️ Cheers to Sijil and Aparna, a beautiful couple and the perfect match designed by the divine hands of the heavens. May your lives be filled with happiness, laughter, care, love, and affection.",
   },
+
   {
     name: "Adarsh",
     text: "While life gave apples to many, it gave Sijil someone truly special — Aparna ❤️. May your life together be filled with happiness as grand as winning the Onam Bumper.",
   },
+
   {
     name: "Jithin",
     text: "Congratulations to Sijil and Aparna ❣️ Wishing you a future full of togetherness, adventures, success, and countless moments of joy. Stay happy, blessed, and deeply in love always 🥰",
   },
+
   {
     name: "Hyru",
     text: "From “Marriage is not for me”, never thought Appu would one day fall so deeply in love — but here you are, happier than ever with your soulmate. So grateful to witness this beautiful journey from school friendship to your wedding day. Wishing you both a lifetime of love, warmth, adventures, and beautiful memories together. Elegant souls, beautiful couple. ✨💗",
   },
+
   {
     name: "Thasni",
-    text: "To my dearest❤️ I never thought I’d see this day. You were always the one who said marriage was never your thing, and honestly, I believed you too. Seeing you step into this new chapter feels so emotional because it reminds me how life changes our hearts in the most unexpected ways😅 I’m so happy to see you smiling and choosing love. Watching someone I care about find their person is such a beautiful feeling. Seeing the way he loves, understands, and stands beside you makes me feel so happy because I truly believe you found the right person. Some people are simply meant to meet, and looking at both of you together feels like seeing a perfect match written by fate itself. You both bring out the best in each other in the most beautiful way. 🧿",
+    text: `To my dearest❤️
+
+I never thought I’d see this day. You were always the one who said marriage was never your thing, and honestly, I believed you too.
+
+Seeing you step into this new chapter feels so emotional because it reminds me how life changes our hearts in the most unexpected ways😅
+
+I’m so happy to see you smiling and choosing love.
+
+Watching someone I care about find their person is such a beautiful feeling.
+
+Seeing the way he loves, understands, and stands beside you makes me feel so happy because I truly believe you found the right person.
+
+Some people are simply meant to meet, and looking at both of you together feels like seeing a perfect match written by fate itself.
+
+You both bring out the best in each other in the most beautiful way. 🧿`,
   },
 ];
 
