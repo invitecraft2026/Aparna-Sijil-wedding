@@ -11,27 +11,87 @@ import { LoadingScreen } from "@/components/LoadingScreen";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Aparna & Sijil — Wedding · 29 August 2026" },
+      // Title
+      {
+        title: "Aparna & Sijil — Wedding · 29 August 2026",
+      },
+
+      // SEO Description
       {
         name: "description",
         content:
-          "Aparna & Sijil are getting married on 29 August 2026. Thaalikettu at Sreekrishna Temple, Guruvayur. Join us for the ceremony at KP Namboodiri's Auditorium, Vadakkekad, Thrissur.",
+          "Aparna & Sijil are getting married on 29 August 2026. Join us for our beautiful wedding celebration in Guruvayur & Thrissur.",
       },
-      { property: "og:title", content: "Aparna & Sijil — Wedding · 29 August 2026" },
+
+      // Open Graph
+      {
+        property: "og:title",
+        content: "Aparna & Sijil — Wedding · 29 August 2026",
+      },
       {
         property: "og:description",
-        content: "A Hindu wedding celebration in Guruvayur & Thrissur. With love, Aparna & Sijil.",
+        content:
+          "With love, Aparna & Sijil invite you to celebrate their wedding on 29 August 2026.",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://aparna-sijil-wedding.invitecraft2026.workers.dev/image-1.jpeg",
+      },
+
+      // Twitter Preview
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        name: "twitter:title",
+        content: "Aparna & Sijil — Wedding · 29 August 2026",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "Join us for the wedding celebration of Aparna & Sijil.",
+      },
+      {
+        name: "twitter:image",
+        content: "https://aparna-sijil-wedding.invitecraft2026.workers.dev/image-1.jpeg",
+      },
+
+      // Theme Color
+      {
+        name: "theme-color",
+        content: "#f5e7dc",
       },
     ],
+
     links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com",
+      },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&family=Jost:wght@300;400;500;600&display=swap",
+        href:
+          "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Great+Vibes&family=Jost:wght@300;400;500;600&display=swap",
+      },
+
+      // Favicon
+      {
+        rel: "icon",
+        href: "/favicon.ico",
       },
     ],
   }),
+
   component: Index,
 });
 
