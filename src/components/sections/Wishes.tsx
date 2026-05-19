@@ -115,7 +115,19 @@ Pinne kalyanathin enik shirt eduth tharann marakall!! 😋🤣`,
     name: "Hyru",
     text: "From “Marriage is not for me”, never thought Appu would one day fall so deeply in love — but here you are, happier than ever with your soulmate. So grateful to witness this beautiful journey from school friendship to your wedding day. Wishing you both a lifetime of love, warmth, adventures, and beautiful memories together. Elegant souls, beautiful couple. ✨💗",
   },
-
+  {
+    name:"Shreya",
+    text:"Cheers to both lovelies 🥂✨ Now that you’ve found your forever person, may you always have each other to rise above every wall life throws your way — with rose apples, laughter, love, and everything sweet in between. Wishing you a lifetime filled with friendship, endless adventures, and a love that only grows stronger with time"
+  },
+  {
+    name:"Riya",
+    text:"What a dangerously good-looking couple! Aparna's cute anger issues finally found their calm and composed Sijil. Honestly, this marriage looks less like a wedding and more like “Beauty & The Human Stress Ball.” "
+  },
+  {
+    name:"Adwaith",
+    text:"May your marriage be a beautiful journey filled with endless love, laughter, and unwavering support for one another. Congrats, Sijil ettan and Aparna chechi, as you step into this wonderful new chapter of life together!"
+  }
+,
   {
     name: "Thasni",
     text: `To my dearest❤️
