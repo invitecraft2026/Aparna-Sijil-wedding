@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown, Heart, MapPin } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/image-1.jpeg";
 import { FloatingPetals, Sparkles } from "@/components/FloatingPetals";
 import { FloralDivider } from "@/components/FloralDivider";
 

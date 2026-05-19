@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Heart } from "lucide-react";
-import story1 from "@/assets/story-1.jpg";
-import story2 from "@/assets/story-2.jpg";
+import story1 from "@/assets/image-4.jpeg";
+import story2 from "@/assets/image-6.jpeg";
 import { FloralDivider, CornerFloral } from "@/components/FloralDivider";
 
 export function Story() {

@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import g5 from "@/assets/gallery-5.jpg";
-import g6 from "@/assets/gallery-6.jpg";
-import s1 from "@/assets/story-1.jpg";
-import s2 from "@/assets/story-2.jpg";
+import g1 from "@/assets/image-1.jpeg";
+import g2 from "@/assets/image-2.jpeg";
+import g3 from "@/assets/image-3.jpeg";
+import g4 from "@/assets/image-4.jpeg";
+import g5 from "@/assets/image-5.jpeg";
+import g6 from "@/assets/image-6.jpeg";
+import s1 from "@/assets/image-7.jpeg";
+// import s2 from "@/assets/story-2.jpg";
 import { FloralDivider } from "@/components/FloralDivider";
 
 const IMAGES = [
@@ -17,9 +17,9 @@ const IMAGES = [
   { src: g2, alt: "Bridal mehendi hands", span: "" },
   { src: g3, alt: "Bride silhouette at golden hour", span: "row-span-2" },
   { src: g6, alt: "Bridal close up portrait", span: "" },
-  { src: g4, alt: "Rose petals", span: "" },
-  { src: s2, alt: "Holding hands", span: "" },
-  { src: g5, alt: "Guruvayur temple", span: "row-span-2" },
+  { src: g5, alt: "Rose petals", span: "" },
+  // { src: s2, alt: "Holding hands", span: "" },
+  // { src: g5, alt: "Guruvayur temple", span: "row-span-2" },
 ];
 
 export function Gallery() {

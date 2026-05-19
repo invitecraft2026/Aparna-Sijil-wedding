@@ -59,7 +59,7 @@ export function Footer() {
           <p className="mt-2 text-sm text-foreground/70">Guruvayur · Thrissur · Kerala</p>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -80,7 +80,7 @@ export function Footer() {
               <Icon className="h-4 w-4" />
             </a>
           ))}
-        </motion.div>
+        </motion.div> */}
 
         <FloralDivider className="mt-14" />
 
