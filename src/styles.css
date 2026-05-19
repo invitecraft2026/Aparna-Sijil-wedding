@@ -142,6 +142,49 @@
     background-clip: text;
     color: transparent;
   }
+  .text-romantic-gradient {
+  background: linear-gradient(
+    135deg,
+    #b76e79 0%,
+    #d4a373 35%,
+    #f2c6a0 55%,
+    #c08497 75%,
+    #8b5e83 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-royal-gradient {
+  background: linear-gradient(
+    135deg,
+    #7a4e2d 0%,
+    #c89b3c 30%,
+    #f7e7b4 50%,
+    #c89b3c 70%,
+    #7a4e2d 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-blush-gradient {
+  background: linear-gradient(
+    135deg,
+    #9f5f80 0%,
+    #d291bc 40%,
+    #f7d1cd 60%,
+    #c06c84 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
   .bg-romance { background: var(--gradient-romance); }
   .bg-dawn { background: var(--gradient-dawn); }

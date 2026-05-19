@@ -41,15 +41,58 @@ export function Hero() {
           transition={{ duration: 1.4, delay: 0.5, ease: "easeOut" }}
           className="mt-4 font-display text-6xl sm:text-7xl md:text-8xl lg:text-[9rem] leading-[0.95] tracking-tight text-balance"
         >
-          <span className="text-gold-gradient drop-shadow-[0_4px_24px_oklch(0.74_0.105_78/0.4)]">
-            Aparna
-          </span>
-          <span className="block font-script text-4xl sm:text-5xl md:text-6xl text-rose-deep/70 my-2 md:my-3">
-            &amp;
-          </span>
-          <span className="text-gold-gradient drop-shadow-[0_4px_24px_oklch(0.74_0.105_78/0.4)]">
-            Sijil
-          </span>
+     <div className="relative z-20 text-center">
+  <h1 className="font-display leading-none">
+    <span
+      className="
+        block
+        text-[5rem] sm:text-[7rem] md:text-[9rem]
+        font-semibold
+        tracking-tight
+        bg-gradient-to-r
+        from-[#fff1d6]
+        via-[#f7c67a]
+        to-[#d46aa0]
+        bg-clip-text
+        text-transparent
+        drop-shadow-[0_6px_30px_rgba(0,0,0,0.65)]
+      "
+    >
+      Aparna
+    </span>
+
+    <span
+      className="
+        block
+        font-script
+        text-5xl md:text-6xl
+        text-[#f2c6d8]
+        my-2
+        drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)]
+      "
+    >
+      &
+    </span>
+
+    <span
+      className="
+        block
+        text-[5rem] sm:text-[7rem] md:text-[9rem]
+        font-semibold
+        tracking-tight
+        bg-gradient-to-r
+        from-[#fff1d6]
+        via-[#f7c67a]
+        to-[#d46aa0]
+        bg-clip-text
+        text-transparent
+        drop-shadow-[0_6px_30px_rgba(0,0,0,0.65)]
+      "
+    >
+      Sijil
+    </span>
+  </h1>
+</div>
         </motion.h1>
 
         <motion.div
@@ -75,7 +118,7 @@ export function Hero() {
           <FloralDivider />
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.6 }}
@@ -103,7 +146,7 @@ export function Hero() {
               </span>
             </p>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

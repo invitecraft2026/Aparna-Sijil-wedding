@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { Heart, X } from "lucide-react";
 import { FloralDivider } from "@/components/FloralDivider";
 
 const WISHES = [
@@ -49,151 +49,170 @@ const WISHES = [
     text: "Congratulations to Sijil and Aparna ❣️ Wishing you a future full of togetherness, adventures, success, and countless moments of joy. Stay happy, blessed, and deeply in love always 🥰",
   },
   {
-    name:"Hyru",
-    text:"From “Marriage is not for me”, never thought Appu would one day fall so deeply in love — but here you are, happier than ever with your soulmate. So grateful to witness this beautiful journey from school friendship to your wedding day. Wishing you both a lifetime of love, warmth, adventures, and beautiful memories together. Elegant souls, beautiful couple. ✨💗"
+    name: "Hyru",
+    text: "From “Marriage is not for me”, never thought Appu would one day fall so deeply in love — but here you are, happier than ever with your soulmate. So grateful to witness this beautiful journey from school friendship to your wedding day. Wishing you both a lifetime of love, warmth, adventures, and beautiful memories together. Elegant souls, beautiful couple. ✨💗",
   },
   {
-    name:"Thasni",
-    text:"To my dearest❤️ I never thought I’d see this day. You were always the one who said marriage was never your thing, and honestly, I believed you too. Seeing you step into this new chapter feels so emotional because it reminds me how life changes our hearts in the most unexpected ways😅I’m so happy to see you smiling and choosing love. Watching someone I care about find their person is such a beautiful feeling.Seeing the way he loves, understands, and stands beside you makes me feel so happy because I truly believe you found the right person. Some people are simply meant to meet, and looking at both of you together feels like seeing a perfect match written by fate itself. You both bring out the best in each other in the most beautiful way. 🧿 A part of me still can't believe that my best friend is getting married. It feels like yesterday we were laughing, sharing secrets, and talking about life without ever imagining this day. Thinking about how far we've come fills my hea"
-  }
+    name: "Thasni",
+    text: "To my dearest❤️ I never thought I’d see this day. You were always the one who said marriage was never your thing, and honestly, I believed you too. Seeing you step into this new chapter feels so emotional because it reminds me how life changes our hearts in the most unexpected ways😅 I’m so happy to see you smiling and choosing love. Watching someone I care about find their person is such a beautiful feeling. Seeing the way he loves, understands, and stands beside you makes me feel so happy because I truly believe you found the right person. Some people are simply meant to meet, and looking at both of you together feels like seeing a perfect match written by fate itself. You both bring out the best in each other in the most beautiful way. 🧿",
+  },
 ];
 
 export function Wishes() {
-  const [idx, setIdx] = useState(0);
+  const [selectedWish, setSelectedWish] = useState<
+    null | { name: string; text: string }
+  >(null);
 
-  // Auto Slide
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIdx((prev) => (prev + 1) % WISHES.length);
-    }, 7000);
-
-    return () => clearInterval(interval);
-  }, []);
-
-  // Manual Navigation
-  const go = (dir: number) => {
-    setIdx((prev) => (prev + dir + WISHES.length) % WISHES.length);
+  // Short Text Preview
+  const truncateText = (text: string, maxLength = 180) => {
+    if (text.length <= maxLength) return text;
+    return text.slice(0, maxLength) + "...";
   };
 
   return (
-    <section
-      id="wishes"
-      className="relative overflow-hidden bg-gradient-to-b from-ivory via-lavender/20 to-blush/30 py-28 md:py-40"
-    >
-      {/* Background Blobs */}
-      <div className="pointer-events-none absolute inset-0">
-        <motion.div
-          animate={{ x: [0, 30, 0], y: [0, -20, 0] }}
-          transition={{ duration: 14, repeat: Infinity }}
-          className="absolute left-10 top-20 h-60 w-60 rounded-full bg-blush/40 blur-3xl"
-        />
+    <>
+      <section
+        id="wishes"
+        className="relative overflow-hidden bg-[#f8f4ef] py-24 md:py-32"
+      >
+        {/* Background Blur */}
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+          <div className="absolute -left-20 top-0 h-72 w-72 rounded-full bg-rose-100/40 blur-3xl" />
 
-        <motion.div
-          animate={{ x: [0, -40, 0], y: [0, 30, 0] }}
-          transition={{ duration: 18, repeat: Infinity }}
-          className="absolute bottom-20 right-10 h-72 w-72 rounded-full bg-peach/40 blur-3xl"
-        />
-      </div>
+          <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-amber-100/30 blur-3xl" />
+        </div>
 
-      <div className="relative mx-auto max-w-5xl px-6">
-        {/* Heading */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="text-center"
-        >
-          <p className="font-script text-3xl text-rose-deep/80">
-            Toasts & Wishes
-          </p>
+        <div className="relative mx-auto max-w-6xl px-6">
+          {/* Heading */}
+          <motion.div
+            initial={{ opacity: 0, y: 35 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="text-center"
+          >
+            <div className="mb-5 flex justify-center">
+              <div className="rounded-full border border-[#d9b99b]/40 bg-white/70 p-4 shadow-sm">
+                <Heart className="h-7 w-7 text-[#c68b8b]" />
+              </div>
+            </div>
 
-          <h2 className="mt-2 font-display text-4xl md:text-5xl text-gold-gradient">
-            Blessings from loved ones
-          </h2>
+            <h2 className="font-display text-5xl text-[#4b3425] md:text-6xl">
+              Toasts & Wishes
+            </h2>
 
-          <FloralDivider className="mt-6" />
-        </motion.div>
+            <div className="mt-5 flex items-center justify-center gap-4">
+              <span className="h-px w-24 bg-[#d9b99b]" />
+              <Heart className="h-4 w-4 fill-[#d9b99b] text-[#d9b99b]" />
+              <span className="h-px w-24 bg-[#d9b99b]" />
+            </div>
 
-        {/* Wishes Card */}
-        <div className="relative mt-16">
-          <div className="relative h-[38rem] sm:h-[32rem]">
-            <AnimatePresence mode="wait">
+            <p className="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-[#7a6a5d]">
+              Words of love, laughter and heartfelt blessings from our
+              favourite people.
+            </p>
+
+            <FloralDivider className="mt-8" />
+          </motion.div>
+
+          {/* Wishes */}
+          <div className="mt-20 space-y-6">
+            {WISHES.map((wish, index) => (
               <motion.div
-                key={idx}
-                initial={{ opacity: 0, y: 30, scale: 0.96 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                exit={{ opacity: 0, y: -30, scale: 0.96 }}
-                transition={{ duration: 0.7, ease: "easeOut" }}
-                className="absolute inset-0"
+                key={wish.name}
+                initial={{ opacity: 0, y: 35 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.7,
+                  delay: index * 0.05,
+                }}
+                whileHover={{ y: -4 }}
+                onClick={() => setSelectedWish(wish)}
+                className="cursor-pointer overflow-hidden rounded-[2rem] border border-[#eadfd3] bg-white/80 shadow-lg backdrop-blur-sm transition-all hover:shadow-2xl"
               >
-                <div className="glass shadow-card ring-gold/30 relative flex h-full flex-col items-center justify-center overflow-y-auto rounded-3xl p-6 text-center ring-1 sm:p-10 md:p-14">
-                  <Quote className="mb-6 h-10 w-10 text-gold/70" />
+                <div className="grid md:grid-cols-[280px_1fr]">
+                  {/* Left */}
+                  <div className="flex items-center gap-5 border-b border-[#efe6dd] px-8 py-8 md:border-b-0 md:border-r">
+                    <div className="grid h-12 w-12 place-items-center rounded-full border border-[#e4cfc3] bg-[#fffaf7]">
+                      <Heart className="h-5 w-5 text-[#d19898]" />
+                    </div>
 
-                  <p
-                    className={`font-display max-w-3xl italic leading-relaxed text-foreground/85 text-balance ${
-  WISHES[idx].text.length > 900
-    ? "text-sm sm:text-base md:text-lg"
-    : WISHES[idx].text.length > 500
-    ? "text-base sm:text-lg md:text-xl"
-    : "text-xl sm:text-2xl md:text-3xl"
-}`}
-                  >
-                    “{WISHES[idx].text}”
-                  </p>
+                    <h3 className="font-display text-2xl text-[#3d2b1f]">
+                      {wish.name}
+                    </h3>
+                  </div>
 
-                  <div className="mt-8 flex items-center gap-3">
-                    <span className="h-px w-10 bg-gold/60" />
+                  {/* Right */}
+                  <div className="flex items-center px-8 py-8 md:px-10">
+                    <p className="line-clamp-3 text-base leading-relaxed text-[#5f5146] md:text-lg">
+                      {truncateText(wish.text)}
+                    </p>
 
-                    <span className="font-script text-2xl text-rose-deep">
-                      {WISHES[idx].name}
-                    </span>
-
-                    <span className="h-px w-10 bg-gold/60" />
+                    {wish.text.length > 180 && (
+                      <span className="ml-3 shrink-0 text-sm font-medium text-[#c68b8b]">
+                        Read More
+                      </span>
+                    )}
                   </div>
                 </div>
               </motion.div>
-            </AnimatePresence>
-          </div>
-
-          {/* Controls */}
-          <div className="mt-8 flex items-center justify-center gap-6">
-            {/* Previous */}
-            <button
-              onClick={() => go(-1)}
-              className="glass hover:shadow-glow grid h-11 w-11 place-items-center rounded-full text-rose-deep transition-all"
-              aria-label="Previous wish"
-            >
-              <ChevronLeft className="h-5 w-5" />
-            </button>
-
-            {/* Dots */}
-            <div className="flex items-center gap-2">
-              {WISHES.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setIdx(i)}
-                  className={`rounded-full transition-all ${
-                    i === idx
-                      ? "h-1.5 w-8 bg-rose-deep"
-                      : "h-1.5 w-1.5 bg-rose-deep/30"
-                  }`}
-                  aria-label={`Wish ${i + 1}`}
-                />
-              ))}
-            </div>
-
-            {/* Next */}
-            <button
-              onClick={() => go(1)}
-              className="glass hover:shadow-glow grid h-11 w-11 place-items-center rounded-full text-rose-deep transition-all"
-              aria-label="Next wish"
-            >
-              <ChevronRight className="h-5 w-5" />
-            </button>
+            ))}
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Popup Modal */}
+      <AnimatePresence>
+        {selectedWish && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[999] flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm"
+            onClick={() => setSelectedWish(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.9, y: 40 }}
+              animate={{ scale: 1, y: 0 }}
+              exit={{ scale: 0.9, y: 40 }}
+              transition={{ duration: 0.35 }}
+              onClick={(e) => e.stopPropagation()}
+              className="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-[2rem] bg-[#fffaf7] p-8 shadow-2xl md:p-12"
+            >
+              {/* Close */}
+              <button
+                onClick={() => setSelectedWish(null)}
+                className="absolute right-5 top-5 grid h-10 w-10 place-items-center rounded-full bg-[#f5ebe4] text-[#7a5c48] transition-all hover:rotate-90"
+              >
+                <X className="h-5 w-5" />
+              </button>
+
+              {/* Top */}
+              <div className="mb-8 flex items-center gap-4">
+                <div className="grid h-14 w-14 place-items-center rounded-full border border-[#e4cfc3] bg-[#fff]">
+                  <Heart className="h-6 w-6 text-[#d19898]" />
+                </div>
+
+                <div>
+                  <h3 className="font-display text-3xl text-[#3d2b1f]">
+                    {selectedWish.name}
+                  </h3>
+
+                  <p className="mt-1 text-sm tracking-wide text-[#9a7f6d]">
+                    Sent with love 💌
+                  </p>
+                </div>
+              </div>
+
+              {/* Full Text */}
+              <p className="whitespace-pre-line text-lg leading-loose text-[#5f5146]">
+                {selectedWish.text}
+              </p>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   );
 }
