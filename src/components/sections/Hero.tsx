@@ -58,9 +58,9 @@ export function Hero() {
           transition={{ duration: 1, delay: 1.1 }}
           className="mt-8 flex flex-col items-center gap-1"
         >
-          <span className="text-xs sm:text-sm uppercase tracking-[0.5em] text-rose-deep/70">
+          {/* <span className="text-xs sm:text-sm uppercase tracking-[0.5em] text-rose-deep/70">
             Hindu Wedding
-          </span>
+          </span> */}
           <span className="font-display text-3xl sm:text-4xl text-foreground mt-2">
             29 · August · 2026
           </span>
