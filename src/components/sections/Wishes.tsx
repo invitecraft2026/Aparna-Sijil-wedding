@@ -128,6 +128,10 @@ Pinne kalyanathin enik shirt eduth tharann marakall!! 😋🤣`,
     text:"May your marriage be a beautiful journey filled with endless love, laughter, and unwavering support for one another. Congrats, Sijil ettan and Aparna chechi, as you step into this wonderful new chapter of life together!"
   }
 ,
+{
+ name:"Rohith",
+ text:"Hey Sijil,As you step into this beautiful new phase of life, I just want to say how happy I am for you. I’ve seen your journey through every up and down, which makes this moment feel personal to me too. Wishing both you and Aparna a lifetime filled with love, happiness, and beautiful memories...May your bond continue to grow stronger and more  beautiful with each  passing day.Wishing you both a beautiful married life and a wonderful future ahead 😍😍"
+},
   {
     name: "Thasni",
     text: `To my dearest❤️
