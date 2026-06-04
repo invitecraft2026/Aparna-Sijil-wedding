@@ -133,6 +133,25 @@ Pinne kalyanathin enik shirt eduth tharann marakall!! 😋🤣`,
  text:"Hey Sijil,As you step into this beautiful new phase of life, I just want to say how happy I am for you. I’ve seen your journey through every up and down, which makes this moment feel personal to me too. Wishing both you and Aparna a lifetime filled with love, happiness, and beautiful memories...May your bond continue to grow stronger and more  beautiful with each  passing day.Wishing you both a beautiful married life and a wonderful future ahead 😍😍"
 },
 {
+  name:"Smruti",
+  text:` Dear Aparna & Sijil,
+
+If there's one thing your story has taught me, it's that love isn't about never having disagreements or difficult moments. It's about choosing each other through all of them.
+
+I still remember a time when things seemed uncertain, and if someone had told me then that I'd one day be writing a note for your wedding, I probably wouldn't have believed them. But that's what makes your journey so special. What you built together was stronger than a bad day, a difficult conversation, or a rough patch. It was real.
+
+Aparna, one of the things I've always admired about you is how deeply you care about the people in your life. And Sijil, even though I've mostly known you through Aparna's stories, it's impossible not to notice the happiness and warmth you've brought into her world.
+Watching your relationship grow from a story that was still being written into a lifelong commitment has been genuinely lovely to see. Somewhere between all the ups and downs, the two of you found a home in each other.
+
+I hope your marriage is filled with the little things that matter most, laughing over absolutely nothing, finding comfort in ordinary days, celebrating every win together, and holding each other's hand through every challenge life brings.
+
+Thank you for reminding us that sometimes the best love stories are not the easiest ones. They're the ones where two people keep choosing each other, over and over again.
+
+Wishing you both a lifetime of love, friendship, adventure, and countless beautiful memories.
+
+Congratulations on your forever. ❤️`
+},
+{
   name:"Gowri",
   text:"Her autobiography is similar to the movie, '27 dresses,' and her dream life is waiting to be clocked in. I cannot wait to see her in this new phase and a new role because she's going to be a complete #wifey goal. All the best. And if you go around the world, don't forget to get me a keepsake like a penpal 🩷🩷"
 },
